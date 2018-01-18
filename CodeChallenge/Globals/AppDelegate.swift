@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Disk
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    /// Currencies list
+    static var currenciesList: [String: String] = [:]
+    static var currenciesRates: [String: Double] = [:]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
